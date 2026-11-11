@@ -1,0 +1,27 @@
+/* Fuk 抓捕状态 — 纯白字 / 无黑底 / 文字阴影 */
+.fuk-status {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: transparent !important;
+  color: #ffffff;
+  font-family: 'Overpass Mono', 'Noto Sans Mono', monospace;
+  pointer-events: none;
+  user-select: none;
+}
+.fuk-status .fuk-line {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.95), 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+.fuk-status .fuk-num {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.9);
+}

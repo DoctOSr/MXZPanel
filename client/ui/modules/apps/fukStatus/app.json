@@ -1,0 +1,20 @@
+{
+  "name": "【MXZ】黑手 抓捕状态",
+  "author": "mxz",
+  "version": "0.1",
+  "description": "显示黑手模式抓捕剩余时间与叛徒力场状态（纯白字/透明底/文字阴影）",
+  "directive": "fukStatus",
+  "domElement": "<fuk-status></fuk-status>",
+  "css": {
+    "left": "0px",
+    "right": "0px",
+    "top": "12%",
+    "width": "420px",
+    "height": "90px",
+    "margin": "auto",
+    "position": "absolute"
+  },
+  "category": "Dashboard",
+  "interactive": "no",
+  "preserveAspectRatio": false
+}
