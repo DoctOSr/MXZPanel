@@ -1,14 +1,13 @@
 # 安装与构建
 
-这是 A/B 服面板的源码快照，当前保留正式账号认证流程，需要独立账号服务配合。请先完成 [AUTH.md](AUTH.md) 所列依赖，再进行可运行部署。
+面板由客户端模组与服务端插件组成，账号服务接口见 [AUTH.md](AUTH.md)。
 
 ## 环境
 
-- 合法安装的 BeamNG.drive 和 BeamMP 客户端。
+- BeamNG.drive 和 BeamMP 客户端。
 - 支持当前 Lua 插件 API 的 BeamMP 服务端。服务端代码依赖 `MP`、`FS`、`Util` 等宿主 API。
 - 服务端为 Linux/POSIX 环境，需 `sh`、`curl`、`mkdir`、`chmod`、`find`、`mv`。
 - 构建脚本使用 Python 3.9 或更高版本，无额外依赖。
-- 本次公开源码未完成新的游戏内兼容性验证，未承诺最低游戏或 BeamMP 版本。
 
 ## 客户端打包
 
@@ -26,7 +25,7 @@ python scripts/build.py
 python scripts/build.py --audio-dir /path/to/licensed-audio
 ```
 
-音频将位于 ZIP 的 `art/sound/GForceKO/` 下。音频缺失时，原有代码仍会尝试播放对应路径；声音播放结果未作新的实机验证。
+音频将位于 ZIP 的 `art/sound/GForceKO/` 下。
 
 ## 服务端目录
 
@@ -45,9 +44,3 @@ python scripts/build.py --audio-dir /path/to/licensed-audio
 ## 数据与配置
 
 运行时会生成 `state.json`、认证请求临时文件、激活用量和统计文件。这些文件、真实令牌及玩家数据均不应提交至源码仓库。
-
-生产服务器的状态、积分、传送点、卡密、账号配置和历史备份均未随本源码分发。网页地图观察器属于另一套部署集成，未装入本次服务端目录。
-
-## 源码提供
-
-分发本许可覆盖的程序或修改版时，按 AGPL 提供对应源码。修改版若允许用户远程网络交互，应在用户可见的位置显著提供对应源码获取途径，并确保指向部署版本的实际源码及必要构建材料；仅提供上游未修改版本的链接不能代替这些义务。详见 LICENSE 第 6、13 条。
