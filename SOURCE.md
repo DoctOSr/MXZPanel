@@ -1,6 +1,6 @@
 # 对应源码
 
-源码仓库：https://github.com/DoctOSr/BeamMP-MXZPanel
+源码仓库：https://github.com/DoctOSr/MXZPanel
 
 客户端位于 `client/`，服务端位于 `server/mxz/`，打包脚本为 `scripts/build.py`。请通过提交记录获取所用版本对应的源码。
 
